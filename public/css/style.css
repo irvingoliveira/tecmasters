@@ -1,0 +1,146 @@
+body{
+    background: url('/img/bg.png') repeat;
+}
+
+input{
+    outline: 0;
+    outline-style: none;
+    
+}
+
+#banner-left{
+    width: 120px;
+    height: 600px;
+    background-color: #f00;
+    top: 110px;
+    margin-left: -130px;
+    position: fixed;
+    
+}
+
+#banner-right{
+    width: 120px;
+    height: 600px;
+    background-color: #f00;
+    top: 110px;
+    margin-left: 970px;
+    position: fixed;
+    
+}
+
+#banner{
+    width: 468px;
+    height: 60px;
+    background-color: #f00;
+}
+
+#top-bar{
+    width: 100%;
+    background-color: #000;
+}
+
+#top-menu{
+    padding-top: 17px;
+    margin: 0;
+}
+
+#top-menu li{
+    padding-right: 12px;
+    float: left;
+    color: #fff;
+}
+
+#top-menu a{
+    color: #fff;
+}
+
+#top-menu a:hover{
+    color: #f00;
+}
+
+.search, .search:focus {
+   border: 0;
+   margin: 14px 0 0 8px;
+   width: 250px;
+   float: left; 
+   outline: 0 none;  
+   position: absolute;
+   border-radius: 0;
+   -moz-border-radius: 0;
+   -webkit-border-radius: 0;
+   box-shadow: 0;
+   -moz-box-shadow: 0;
+   -webkit-box-shadow: 0;
+}
+
+
+#header{
+    background: url('/img/bg-header.jpg') repeat-x;
+    height: 215px;
+}
+
+#feeds-top{
+    background: url('/img/feeds-top.jpg') repeat-x;
+    color: #fff;
+    margin-top: 40px;
+    padding-bottom: 0;
+}
+
+#feeds-top p{
+    margin: 8px 8px 6px 8px;
+}
+
+#feeds{
+    background: url('/img/feeds.jpg') repeat;
+    height: 570px;
+    color: #fff;
+    float: right;
+}
+
+#feeds p{
+    margin: 8px;
+}
+
+#content{
+    background-color: #fff;
+    padding-bottom: 15px;
+}
+
+#footer{
+    background: url('/img/bg-footer.jpg') repeat-x;
+    height: 188px;
+    text-align: center;
+}
+
+.footer{    
+    background-color: #515151;
+    height: 1px;    
+}
+
+#powered_by{
+    padding-top: 85px;
+    color:#fff;
+}
+
+.ticker {
+	width: 210px;
+	height: 40px;
+	overflow: hidden;
+	border: 0;
+	margin: 4px;
+	padding: 0;
+	list-style: none;
+	border-radius:0px;
+	
+}
+
+#ticker{
+	height: 570px;
+}
+
+.ticker li {
+	height: 100px;
+	border-bottom: 1px dotted #DDD;
+	padding: 5px;
+	margin: 0px 5px;
+}

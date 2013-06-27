@@ -1,0 +1,102 @@
+<?php echo $this->doctype(); ?>
+
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <?php echo $this->headTitle('TecMasters')->setSeparator(' - ')->setAutoEscape(false) ?>
+
+        <?php echo $this->headMeta()->appendName('viewport', 'width=device-width, initial-scale=1.0') ?>
+
+        <!-- Le styles -->
+        <?php echo $this->headLink(array('rel' => 'shortcut icon', 'type' => 'image/vnd.microsoft.icon', 'href' => $this->basePath() . '/img/favicon.ico'))
+                        ->prependStylesheet($this->basePath() . '/css/style.css') 
+                        ->prependStylesheet($this->basePath() . '/css/reset.css')                      
+			->prependStylesheet($this->basePath() . '/css/bootstrap-responsive.min.css')
+                        ->prependStylesheet($this->basePath() . '/css/bootstrap.min.css') 
+                        ->prependStylesheet($this->basePath() . '/css/960_16_col.css')
+                        ->prependStylesheet($this->basePath() . '/css/text.css')
+                        
+                        ->prependStylesheet($this->basePath() . '/css/screen.css')
+                        
+        ?>
+
+        <!-- Scripts -->
+        <?php echo $this->headScript()->prependFile($this->basePath() . '/js/html5.js', 'text/javascript', array('conditional' => 'lt IE 9',))
+                                      ->prependFile($this->basePath() . '/js/sticker.js')
+                                      ->prependFile($this->basePath() . '/js/easySlider1.7.js')
+                                      ->prependFile($this->basePath() . '/js/bootstrap.min.js')
+                                      ->prependFile($this->basePath() . '/js/jquery.min.js')
+                                       ?>
+
+    </head>
+    <body>
+        
+	<div id="top-bar">
+	    <div class="container_16">
+		<div class="grid_4">
+   		    <a class="brand" href="<?php echo $this->url('home') ?>"><img src="<?php echo $this->basePath() . '/img/logo.png' ?>"></a>
+  	        </div>
+			
+		<div class="grid_4">
+                        <ul class="nav" id="top-menu">
+                            <li class="active"><a href="<?php echo $this->url('home') ?>"><?php echo $this->translate('Home') ?></a></li>
+			    <li class="active"><a href="<?php echo $this->url('home') ?>"><?php echo $this->translate('Menu 2') ?></a></li>
+                            <li class="active"><a href="<?php echo $this->url('home') ?>"><?php echo $this->translate('Menu 3') ?></a></li>
+                        </ul>
+  	        </div>
+			
+		<div class="grid_5 prefix_3">
+                    <form method="post" action="">
+                        <input type="text" class="search" name="search" maxlength="255" value="Busca..." onfocus="if(this.value==='Busca...')this.value='';" onblur="if(this.value==='')this.value='Busca...';" />
+                    </form>
+		    <img src="<?php echo $this->basePath() . '/img/search.jpg' ?>">
+		</div>
+
+	    </div>
+	</div>
+	<!-- Fim da barra de topo -->
+
+        <div class="container_16" id="content">
+            
+            <?php echo $this->content; ?>
+            
+        </div>	
+        
+	<div class="container_16">
+            <div id="banner-left">
+            
+            </div>
+	    <div id="footer">
+                <div class="clear">&nbsp;</div>
+                
+                <br />
+                
+                <div class="grid_14 prefix_1">
+                    <hr class="footer"/>
+                </div>
+                
+                <div class="clear">&nbsp;</div>
+                
+                <p>&copy; 2005 - <?php echo date('Y') ?> by Zend Technologies Ltd. <?php echo $this->translate('All rights reserved.') ?></p>
+                
+                <div class="clear">&nbsp;</div>
+                
+                <div id="powered_by">
+                    
+                    <p> Powered by: </p>
+                    
+                    <a class="logo" href="http://php.net/" target="_blank"><img src="<?php echo $this->basePath() . '/img/php-logo.png' ?>" alt="PHP"></a>
+                    <a class="logo" href="http://www.mysql.com/" target="_blank"><img src="<?php echo $this->basePath() . '/img/mysql-logo.png' ?>" alt="MySQL"></a>
+                    <a class="logo" href="https://netbeans.org/" target="_blank"><img src="<?php echo $this->basePath() . '/img/netbeans-logo.png' ?>" alt="Netbeans"></a>
+                    <a class="logo" href="http://www.apache.org/" target="_blank"><img src="<?php echo $this->basePath() . '/img/apache-logo.png' ?>" alt="Apache"></a>
+                    <a class="logo" href="http://framework.zend.com/" target="_blank"><img src="<?php echo $this->basePath() . '/img/zf2-logo.png' ?>" alt="Zend Framework 2"></a>
+                    <a class="logo" href="http://www.gimp.org/" target="_blank"><img src="<?php echo $this->basePath() . '/img/gimp-logo.png' ?>" alt="GIMP"></a>
+                </div>
+	    </div>
+            <div id="banner-right">
+            
+            </div>
+	</div>
+        <?php echo $this->inlineScript() ?>
+    </body>
+</html>
